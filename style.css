@@ -138,10 +138,29 @@ display:flex;
 align-items:center;
 gap:10px;
 animation:logoGlow 2s infinite alternate;
+transition:transform .25s ease, color .25s ease, text-shadow .25s ease;
+}
+
+.logo:hover{
+color:var(--primary) !important;
+transform:scale(1.08) rotate(-1deg);
+animation:logoGlow 2s infinite alternate, logoHover 0.8s ease forwards;
 }
 
 .logo i{
 color:var(--primary);
+}
+
+@keyframes logoHover{
+0%{
+transform:scale(1) rotate(0deg);
+}
+50%{
+transform:scale(1.12) rotate(-2deg);
+}
+100%{
+transform:scale(1.08) rotate(-1deg);
+}
 }
 
 @keyframes logoGlow{

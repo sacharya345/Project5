@@ -112,12 +112,24 @@ color:#000;
 padding:20px 0;
 transition:var(--transition);
 z-index:999;
+background:rgba(0,0,0,.88);
+backdrop-filter:blur(14px);
+box-shadow:0 8px 30px rgba(0,0,0,.35);
 }
 
 .custom-navbar.scrolled{
-background:rgba(0,0,0,.92);
-backdrop-filter:blur(15px);
-box-shadow:0 0 20px rgba(0,0,0,.4);
+background:rgba(0,0,0,.98);
+backdrop-filter:blur(18px);
+box-shadow:0 10px 35px rgba(0,0,0,.45);
+}
+
+.nav-link{
+color:#fff;
+}
+
+.nav-link.active,
+.nav-link:hover{
+color:var(--primary);
 }
 
 .logo{
